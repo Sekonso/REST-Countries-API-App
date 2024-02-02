@@ -1,5 +1,4 @@
 <template>
-  <NavBar></NavBar>
   <div class="home-view container">
     <!-- Input panel -->
     <section class="input">
@@ -79,15 +78,11 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
 import { useCountryStore } from "@/store/useCountryStore";
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
 export default {
-  components: {
-    NavBar,
-  },
   setup() {
     const countryStore = useCountryStore();
     const router = useRouter();

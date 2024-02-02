@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div :class="colorStore.colorMode">
+    <NavBar></NavBar>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// Components import
+import NavBar from "@/components/NavBar.vue";
+import { useColorStore } from "@/store/useColorStore";
 
 export default {
-  name: 'App',
+  // Components
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
-</script>
+    NavBar,
+  },
+  setup() {
+    const colorStore = useColorStore();
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    return { colorStore };
+  },
+};
+</script>

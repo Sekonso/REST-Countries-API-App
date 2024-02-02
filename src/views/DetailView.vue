@@ -1,4 +1,5 @@
 <template>
+  <NavBar></NavBar>
   <div class="detail-view container">
     <!-- Back Button -->
     <button class="back-button" @click="this.$router.push('/')">
@@ -100,9 +101,13 @@
 </template>
 
 <script>
+import NavBar from "@/components/NavBar.vue";
 import { useCountryStore } from "@/store/useCountryStore";
 
 export default {
+  components: {
+    NavBar,
+  },
   setup() {
     const useCountry = useCountryStore();
 

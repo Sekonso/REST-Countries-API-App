@@ -1,4 +1,5 @@
 <template>
+  <NavBar></NavBar>
   <div class="home-view container">
     <!-- Input panel -->
     <section class="input">
@@ -69,15 +70,24 @@
       </div>
       <div v-else>Now loading...</div>
     </section>
+
+    <!-- Scroll top button -->
+    <button class="scroll-top-button">
+      <i class="fa-solid fa-chevron-up text-lighter"></i>
+    </button>
   </div>
 </template>
 
 <script>
+import NavBar from "@/components/NavBar.vue";
 import { useCountryStore } from "@/store/useCountryStore";
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
 export default {
+  components: {
+    NavBar,
+  },
   setup() {
     const countryStore = useCountryStore();
     const router = useRouter();

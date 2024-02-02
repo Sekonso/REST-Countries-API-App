@@ -60,3 +60,22 @@
 .display-none {
   display: none;
 }
+
+.scroll-top-button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  background: var(--primary-color);
+  box-shadow: 0 0 1rem var(--shadow-color);
+  z-index: 9999;
+}
+.scroll-top-button:hover {
+  scale: 1.1;
+}
+.scroll-top-button i {
+  color: var(--primary-text-color);
+}

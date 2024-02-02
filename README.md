@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/Sekonso/REST-Countries-API-App)
+- Live Site URL: [Netlify app](https://sekonso-countries-api-app.netlify.app/)
 
 ## My process
 
@@ -56,7 +56,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Sekonso](https://www.frontendmentor.io/profile/Sekonso)
 
 # vue-app
 

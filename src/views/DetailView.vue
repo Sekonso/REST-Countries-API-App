@@ -103,9 +103,6 @@
 import { useCountryStore } from "@/store/useCountryStore";
 
 export default {
-  components: {
-    NavBar,
-  },
   setup() {
     const useCountry = useCountryStore();
 

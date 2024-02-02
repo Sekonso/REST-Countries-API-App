@@ -71,7 +71,7 @@
     </section>
 
     <!-- Scroll top button -->
-    <button class="scroll-top-button">
+    <button class="scroll-top-button" @click="toTop()">
       <i class="fa-solid fa-chevron-up text-lighter"></i>
     </button>
   </div>
@@ -94,6 +94,13 @@ export default {
       router.push({ path: "/detail" });
     };
 
+    const toTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
     const toggleDropdown = () => {
       optionVisible.value = !optionVisible.value;
     };
@@ -111,6 +118,7 @@ export default {
       toggleDropdown,
       selectOption,
       optionVisible,
+      toTop,
     };
   },
 };

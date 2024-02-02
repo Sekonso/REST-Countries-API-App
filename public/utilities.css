@@ -75,6 +75,7 @@
 }
 .scroll-top-button:hover {
   scale: 1.1;
+  cursor: pointer;
 }
 .scroll-top-button i {
   color: var(--primary-text-color);
